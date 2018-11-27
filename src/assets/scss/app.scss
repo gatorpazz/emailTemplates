@@ -1,0 +1,137 @@
+@import 'settings';
+@import 'foundation-emails';
+@import 'small-breakpoint';
+
+// overwrites for hyphens
+td {
+    word-break: keep-all;
+    hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+}
+
+//COMMON SNIPPETS
+
+.fullWidth {
+    width: 100%;
+}
+
+.bigeyeImage {
+    width: 92px;
+}
+
+.multiBlogBlastHeader {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.noPointer {
+    cursor: default;
+}
+
+.redBar {
+    margin-left: 5px;
+    width: 82px;
+    height: 5px;
+    background: #EC474C;
+}
+
+.georgiaFont {
+    h2, h3, p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+}
+
+.palatinoFont {
+    h2, h3, p {
+        font-family: Palatino, 'Times New Roman', Times, serif;;
+        font-weight: normal;
+    }
+}
+
+.articleHeader {
+    font-size: 25px;
+}
+
+.articlePreview {
+    font-size: 18px;
+}
+
+table.button.tiny table a {
+    font-weight: bold;
+}
+
+.socialMediaIcon {
+    height: 20px;
+}
+
+.overwriteA {
+    color: $black;
+    &:hover, &:visited {
+        color: $black;
+    }
+}
+
+.smallText {
+    font-family: Palatino, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.reducedMargin {
+    margin-bottom: 3px;
+}
+
+.lastIcon {
+    padding-right: 0 !important;
+}
+
+.arrowButton {
+    color: $black;
+    font-size: 19px;
+    &:visited {
+        color: $black;
+    }
+    img {
+        height: 22px;
+    }
+}
+
+.wrapper.secondary {
+    background: #f3f3f3;
+}
+
+// SINGLE BLOG TEMPLATE
+
+.singleBlogDate {
+    color: red;
+}
+
+.blogParagraph {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+// NEWSLETTER TEMPLATE
+.newsletterEmail {
+    h2 {
+        font-family: $body-font-family;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .newsletterHeader {
+        font-size: 46px;
+    }
+    .blackBackground {
+        background-color: #171716;
+        h2, p, h3, a {
+            color: white;
+        }
+    }
+}

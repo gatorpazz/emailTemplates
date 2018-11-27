@@ -1,0 +1,33 @@
+---
+subject: Single Blog Blast Email
+---
+
+<container>
+  {{> headline}}
+  <row>
+    <columns small="12">
+      <spacer size="10"></spacer>
+      <img class="noPointer" mc:edit="blogHeadline" src="assets/img/blogHeadlineNew.png" alt="Blog Headline">
+    </columns>
+  </row>
+  <row>
+    <columns small="12">
+      <spacer size="25"></spacer>
+      <h6 mc:edit="blogDate" class="singleBlogDate">1.23.2018</h6>
+    </columns>
+  </row>
+  <img mc:edit="headerImage" class="fullWidth noPointer" src="https://media.giphy.com/media/c7PcKQlOqZ8Ws/giphy.gif" alt="Header Image">
+  <spacer size="25"></spacer>
+  <row class="palatinoFont" mc:repeatable="singleParagraph">
+    <columns small="12" mc:edit="paragraph">
+      <p class="blogParagraph">[BLOG CONTENT HERE]</p>
+    </columns>
+  </row>
+  <row>
+    <columns small="12">
+      <button class="large alert expand rounded" href="https://bigeye.agency/adverd4e11">No fake news here.</button>
+    </columns>
+  </row>
+  <spacer size="25"></spacer>
+  {{> footer}}
+</container>

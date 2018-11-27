@@ -1,0 +1,32 @@
+---
+subject: Newsletter
+---
+
+<container class="newsletterEmail palatinoFont">
+  {{> headline}}
+  {{> newsletterBeginningContent}}
+  <row>
+    <columns small="12" mc:edit="siteLink">
+      <a class="arrowButton" href="bigeye.agency/orlan4ed17">
+        <img class="float-left" src="assets/img/redArrow.png" alt="arrow">
+        Take me to the site!
+      </a>
+    </columns>
+  </row>
+  {{> newsletterBlogArticle}}
+  <wrapper class="blackBackground">
+    <row>
+      <columns small="12" mc:edit="articleLink">
+        <spacer size="30"></spacer>
+        <a class="arrowButton" href="bigeye.agency/vstrstchng">
+          <img class="float-left" src="assets/img/redArrow.png" alt="arrow">
+          Read article
+        </a>
+        <spacer size="30"></spacer>
+      </columns>
+    </row>
+  </wrapper>
+  {{> imageSet}}
+  {{> newsletterBottomSection}}
+  {{> footer}}
+</container>
